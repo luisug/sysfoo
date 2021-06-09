@@ -45,7 +45,10 @@ pipeline {
 
     stage('Docker Build and Publish') {
       agent any
-      steps {
+      when {
+        branch 'master'
+      }
+    steps {
         script {
           docker.withRegistry('https://index.docker.io/v1/', 'dockerlogin') {
 
