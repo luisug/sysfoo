@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-sysfoo:
-image: luisug/sysfoo:latest
-ports:
-- 9999:8080
+    sysfoo:
+    image: luisug/sysfoo:latest
+    ports:
+        - 9999:8080
